@@ -1,9 +1,85 @@
-@media (max-width: 600px) {
-  body {
-    font-size: 14px;
-    background-size: 200%;
-  }
-  .avatar {
-    width: 100px;
-  }
+body.myspace-body {
+  margin: 0;
+  font-family: Tahoma, Verdana, sans-serif;
+  background: #d8d8d8 url('/bg-noise.png') repeat;
+  color: #222;
+}
+
+/* --- Top Navigation --- */
+.top-nav {
+  background: #003366;
+  color: white;
+  padding: 0.5rem 0;
+}
+
+.top-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.top-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.top-nav a:hover {
+  text-decoration: underline;
+}
+
+/* --- Page Layout --- */
+.profile-container {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 1rem auto;
+}
+
+/* --- Card Styling --- */
+.card {
+  background: #fff;
+  border: 1px solid #aaa;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* --- Profile --- */
+.profile-pic {
+  width: 100%;
+  border: 2px solid #999;
+}
+
+/* --- Contact Card --- */
+.contact-options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-options li {
+  margin-bottom: 0.3rem;
+}
+
+.contact-options a {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.contact-options a:hover {
+  text-decoration: underline;
+}
+
+/* --- Footer --- */
+.myspace-footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 2rem;
 }

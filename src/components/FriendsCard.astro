@@ -1,0 +1,15 @@
+<article class="card friends-card">
+  <h3>Top 8 Friends</h3>
+  <div class="friends-grid">
+    {
+      Array.from({ length: 8 }).map((_, i) => (
+        <img
+          src={`https://placehold.co/80x80?text=F${i + 1}`}
+          alt={`Friend ${i + 1}`}
+          width="80"
+          height="80"
+        />
+      ))
+    }
+  </div>
+</article>
