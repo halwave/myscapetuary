@@ -1,0 +1,9 @@
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    background-size: 200%;
+  }
+  .avatar {
+    width: 100px;
+  }
+}
