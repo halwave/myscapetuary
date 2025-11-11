@@ -1,6 +1,4 @@
 ---
-import TopNav from '../components/TopNav.astro';
-
 interface Props {
   title?: string;
 }
@@ -21,9 +19,6 @@ const { title = 'MySpace Parody' } = Astro.props;
     <div id="myspace-container">
       <header class="myspace-header">
         <h1>{title}</h1>
-        <p class="myspace-tagline">
-          "Your customizable space for bad HTML and good vibes."
-        </p>
       </header>
 
       <main id="myspace-main">
