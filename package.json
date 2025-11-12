@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "astro": "^5.15.4",
-    "cursor-effects": "^1.0.17",
-    "gsap": "^3.13.0"
+    "cursor-effects": "^1.0.17"
   }
 }

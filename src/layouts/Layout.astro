@@ -16,6 +16,8 @@ const { title = 'MySpace Parody' } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
     <script type="module" src="/src/scripts/cursorTrail.ts"></script>
+    <script type="module" src="/src/scripts/glitter.ts" onload="initGlitter()"
+    ></script>
   </head>
 
   <body class={styles.myscapetuaryBody}>

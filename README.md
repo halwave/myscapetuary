@@ -33,6 +33,5 @@ npm run preview
 ## 🛠 Technical Details
 
 - **Astro** handles HTML generation and page layout.
-- **GSAP** animates backgrounds for that endlessly floating MySpace feel.
 - **cursor-effects** adds rainbow cursor trails because why not?
 - **No heavy JS frameworks** — everything else is vanilla HTML & CSS chaos.
