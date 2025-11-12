@@ -8,10 +8,7 @@ const friends = Array.from({ length: 6 });
     {
       friends.map((_, i) => (
         <a href={`#friend${i + 1}`}>
-          <img
-            src={`public/friends/friend${i + 1}.jpg`}
-            alt={`Friend ${i + 1}`}
-          />
+          <img src={`friends/friend${i + 1}.jpg`} alt={`Friend ${i + 1}`} />
         </a>
       ))
     }
