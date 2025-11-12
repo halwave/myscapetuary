@@ -4,6 +4,8 @@ Welcome to **MyScapetuary** — a chaotic, glittery tribute to the wildest corne
 
 Built with **Astro**, this project aims to recreate that over-the-top nostalgia while keeping JavaScript minimal and letting HTML & CSS do the heavy lifting.
 
+<img width="1187" height="522" alt="image" src="https://github.com/user-attachments/assets/b6ddbd6c-e4cc-4317-904f-1b507e8c3981" />
+
 ## 🎯 Goals
 
 - **Fully retro vibe:** Excessive colors, animated backgrounds, and random sparkles.
