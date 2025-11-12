@@ -1,4 +1,6 @@
 ---
+import styles from './Layout.module.css';
+
 interface Props {
   title?: string;
 }
@@ -13,9 +15,10 @@ const { title = 'MySpace Parody' } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
+    <script type="module" src="/src/scripts/cursorTrail.ts"></script>
   </head>
 
-  <body class="myspace-body">
+  <body class={styles.myscapetuaryBody}>
     <div id="myspace-container">
       <header class="myspace-header">
         <h1>{title}</h1>
@@ -25,7 +28,7 @@ const { title = 'MySpace Parody' } = Astro.props;
         <slot />
       </main>
 
-      <footer class="myspace-footer">
+      <footer class={styles.myscapetuaryFooter}>
         <p>© 2025 MyScapetuary - Have your space — Powered by Astro</p>
       </footer>
     </div>
