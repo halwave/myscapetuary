@@ -34,6 +34,6 @@ npm run preview
 ## 🛠 Technical Details
 
 - **Astro** handles HTML generation and page layout.
-- **Responsive CSS:** Uses CSS Grid and media queries to stack panels under ~520px and adjust top navigation.
+- **Responsive CSS:** Uses CSS Grid and media queries to stack panels under ~640px and adjust top navigation.
 - **cursor-effects** adds rainbow cursor trails because why not?
 - **Minimal JS frameworks** — everything else is vanilla HTML & CSS chaos.

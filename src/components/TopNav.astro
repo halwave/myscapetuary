@@ -8,3 +8,40 @@
     <li><a href="#">Search</a></li>
   </ul>
 </nav>
+
+<style>
+  .top-nav {
+    background: linear-gradient(90deg, #000 0%, #111 25%, #0f0 75%, #f0f 100%);
+    border-bottom: 0.1875rem solid #0f0;
+    box-shadow:
+      0 0 0.625rem #0f0,
+      inset 0 0 0.625rem #f0f;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 0.0625rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .top-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.9375rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .top-nav a {
+    color: #f0f;
+    text-decoration: none;
+    transition:
+      color 0.2s ease,
+      text-shadow 0.2s ease;
+  }
+
+  .top-nav a:hover {
+    color: #0f0;
+    text-shadow: 0 0 0.625rem #0f0;
+  }
+</style>

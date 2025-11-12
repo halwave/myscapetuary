@@ -21,7 +21,7 @@ const friends = Array.from({ length: 6 });
 <style>
   .friends-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
     gap: 0.5rem;
     justify-items: center;
     margin-top: 0.5rem;
@@ -37,16 +37,16 @@ const friends = Array.from({ length: 6 });
   .friends-grid a:hover {
     transform: scale(1.1);
     box-shadow:
-      0 0 8px #0f0,
-      inset 0 0 5px #f0f;
+      0 0 0.5rem #0f0,
+      inset 0 0 0.3125rem #f0f;
   }
 
   .friends-grid img {
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
     display: block;
     object-fit: cover;
-    border: 2px solid #f0f;
-    border-radius: 5px;
+    border: 0.125rem solid #f0f;
+    border-radius: 0.3125rem;
   }
 </style>

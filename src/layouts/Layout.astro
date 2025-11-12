@@ -1,6 +1,4 @@
 ---
-import styles from './Layout.module.css';
-
 interface Props {
   title?: string;
 }
@@ -20,7 +18,7 @@ const { title = 'A MySpace Parody' } = Astro.props;
     ></script>
   </head>
 
-  <body class={styles.myscapetuaryBody}>
+  <body class="myscapetuaryBody">
     <div id="myscapetuary-container">
       <header class="myscapetuary-header">
         <h1>{title}</h1>
@@ -30,9 +28,38 @@ const { title = 'A MySpace Parody' } = Astro.props;
         <slot />
       </main>
 
-      <footer class={styles.myscapetuaryFooter}>
+      <footer class="myscapetuaryFooter">
         <p>© 2025 MyScapetuary - Have your space — Powered by Astro</p>
       </footer>
     </div>
   </body>
 </html>
+
+<style>
+  .myscapetuary-header {
+    width: 100%;
+    background: #000;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .myscapetuary-header h1 {
+    margin: 0;
+    font-size: 0.9rem;
+    font-family: monospace;
+    color: #fff;
+  }
+
+  .myscapetuaryBody {
+    margin: 0;
+    font-family: Tahoma, Verdana, sans-serif;
+    background: #fa77ef url('public/background.jpg') repeat;
+    color: #222;
+  }
+
+  .myscapetuaryFooter {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #555;
+    margin-top: 2rem;
+  }
+</style>

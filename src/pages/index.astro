@@ -15,3 +15,25 @@ import TopNav from '../components/TopNav.astro';
     <RightPanel />
   </div>
 </Layout>
+
+<style>
+  .profile-container {
+    display: grid;
+    grid-template-columns: 16.25rem 1fr;
+    gap: 1rem;
+    max-width: 62.5rem;
+    margin: 1rem auto;
+    border: 0.1875rem dashed #f0f;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 1rem;
+    box-shadow:
+      0 0 0.9375rem #0f0,
+      inset 0 0 1.25rem #f0f;
+  }
+
+  @media (max-width: 42.5rem) {
+    .profile-container {
+      grid-template-columns: 1fr; /* single column */
+    }
+  }
+</style>
