@@ -5,7 +5,7 @@ interface Props {
   title?: string;
 }
 
-const { title = 'MySpace Parody' } = Astro.props;
+const { title = 'A MySpace Parody' } = Astro.props;
 ---
 
 <!doctype html>
@@ -21,12 +21,12 @@ const { title = 'MySpace Parody' } = Astro.props;
   </head>
 
   <body class={styles.myscapetuaryBody}>
-    <div id="myspace-container">
-      <header class="myspace-header">
+    <div id="myscapetuary-container">
+      <header class="myscapetuary-header">
         <h1>{title}</h1>
       </header>
 
-      <main id="myspace-main">
+      <main id="myscapetuary-main">
         <slot />
       </main>
 

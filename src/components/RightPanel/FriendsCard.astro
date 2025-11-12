@@ -1,15 +1,52 @@
+---
+const friends = Array.from({ length: 6 });
+---
+
 <article class="card friends-card">
-  <h3>Top 8 Friends</h3>
+  <h3>BFFs</h3>
   <div class="friends-grid">
     {
-      Array.from({ length: 8 }).map((_, i) => (
-        <img
-          src={`https://placehold.co/80x80?text=F${i + 1}`}
-          alt={`Friend ${i + 1}`}
-          width="80"
-          height="80"
-        />
+      friends.map((_, i) => (
+        <a href={`#friend${i + 1}`}>
+          <img
+            src={`public/friends/friend${i + 1}.jpg`}
+            alt={`Friend ${i + 1}`}
+          />
+        </a>
       ))
     }
   </div>
 </article>
+
+<style>
+  .friends-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 0.5rem;
+    justify-items: center;
+    margin-top: 0.5rem;
+  }
+
+  .friends-grid a {
+    display: inline-block;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .friends-grid a:hover {
+    transform: scale(1.1);
+    box-shadow:
+      0 0 8px #0f0,
+      inset 0 0 5px #f0f;
+  }
+
+  .friends-grid img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    object-fit: cover;
+    border: 2px solid #f0f;
+    border-radius: 5px;
+  }
+</style>
